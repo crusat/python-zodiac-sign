@@ -47,6 +47,6 @@ MIT
 
 # for developers
 
-buidl:
+build:
 
     $ python setup.py sdist bdist_wheel
