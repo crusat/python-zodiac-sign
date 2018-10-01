@@ -66,17 +66,13 @@ language_dict = {
     'ru_RU': ru_dict,
     'pt_BR': pt_dict,
     'pt_PT': pt_dict,
+    None: en_dict
 }
-
 
 # @todo use gettext and etc
 def _(word_index):
     language = locale.getlocale()
-    if language_dict.get(language[0]):
-        return language_dict.get(language[0])[word_index][1]
-    else:
-        return en_dict[word_index][1]
-
+    return language_dict.get(language[0])[word_index][1]
 
 def get_zodiac_sign(d, month=None):
     # params
