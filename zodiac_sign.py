@@ -46,13 +46,34 @@ ru_dict = (
     (11, "Рыбы"),
 )
 
+pt_dict = (
+    (0, "Áries"),
+    (1, "Touro"),
+    (2, "Gêmeos"),
+    (3, "Cancer"),
+    (4, "Leão"),
+    (5, "Virgem"),
+    (6, "Libra"),
+    (7, "Escorpião"),
+    (8, "Sargitário"),
+    (9, "Capricórnio"),
+    (10, "Aquário"),
+    (11, "Peixes"),
+)
+
+language_dict = {
+    'en_US': en_dict,
+    'ru_RU': ru_dict,
+    'pt_BR': pt_dict,
+    'pt_PT': pt_dict,
+}
 
 
 # @todo use gettext and etc
 def _(word_index):
-    l = locale.getlocale()
-    if l[0] == 'ru_RU':
-        return ru_dict[word_index][1]
+    language = locale.getlocale()
+    if language_dict.get(language[0]):
+        return language_dict.get(language[0])[word_index][1]
     else:
         return en_dict[word_index][1]
 
