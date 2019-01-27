@@ -5,6 +5,7 @@ Getting the Zodiac sign by date.
 Languages:
 - English
 - Russian
+- Portuguese - Thanks to @guilhermecomum
 
 # Install
 
@@ -50,3 +51,4 @@ MIT
 build:
 
     $ python setup.py sdist bdist_wheel
+

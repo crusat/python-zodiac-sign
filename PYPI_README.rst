@@ -9,6 +9,8 @@ Languages:
 
 - Russian
 
+- Portuguese - Thanks to @guilhermecomum
+
 Install
 =======
 
