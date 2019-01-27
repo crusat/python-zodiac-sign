@@ -11,7 +11,7 @@ with open(path.join(here, 'PYPI_README.rst'), encoding='utf-8') as f:
 
 setup(
     name='zodiac-sign',
-    version='0.2.0',
+    version='0.2.1',
     description='Zodiac Signs',
     long_description=long_description,
 
