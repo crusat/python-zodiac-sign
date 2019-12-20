@@ -11,7 +11,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='zodiac-sign',
-    version='0.2.2',
+    version='0.2.3',
     description='Zodiac Signs',
     long_description=long_description,
 
