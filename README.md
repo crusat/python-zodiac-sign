@@ -3,9 +3,10 @@
 Getting the Zodiac sign by date.
 
 Languages:
-- English
-- Russian
-- Portuguese - Thanks to @guilhermecomum
+- English (`en_US`, default)
+- Russian (`ru_RU`)
+- Portuguese (`pt_BR`, `pt_PT`) - Thanks to @guilhermecomum
+- Greek (`el`, `el_CY`, `el_GR`) - Thanks to @hargikas
 
 # Install
 
@@ -46,9 +47,4 @@ Languages:
 
 MIT
 
-# for developers
-
-build:
-
-    $ python setup.py sdist bdist_wheel
 

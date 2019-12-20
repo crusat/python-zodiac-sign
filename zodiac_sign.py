@@ -16,6 +16,7 @@ sign_dates = (
     ((18, 2), (19, 3)),  # Pisces
 )
 
+# English
 en_dict = (
     (0, "Aries"),
     (1, "Taurus"),
@@ -31,6 +32,7 @@ en_dict = (
     (11, "Pisces"),
 )
 
+# Russian
 ru_dict = (
     (0, "Овен"),
     (1, "Телец"),
@@ -46,6 +48,7 @@ ru_dict = (
     (11, "Рыбы"),
 )
 
+# Portuguese
 pt_dict = (
     (0, "Áries"),
     (1, "Touro"),
@@ -61,11 +64,30 @@ pt_dict = (
     (11, "Peixes"),
 )
 
+# Greek
+el_dict = (
+    (0, "Κριός"),
+    (1, "Ταύρος"),
+    (2, "Δίδυμοι"),
+    (3, "Καρκίνος"),
+    (4, "Λέων"),
+    (5, "Παρθένος"),
+    (6, "Ζυγός"),
+    (7, "Σκορπιός"),
+    (8, "Τοξότης"),
+    (9, "Αιγόκερως"),
+    (10, "Υδροχόος"),
+    (11, "Ιχθείς"),
+)
+
 language_dict = {
     'en_US': en_dict,
     'ru_RU': ru_dict,
     'pt_BR': pt_dict,
     'pt_PT': pt_dict,
+    'el': el_dict,
+    'el_CY': el_dict,
+    'el_GR': el_dict,
     None: en_dict
 }
 
