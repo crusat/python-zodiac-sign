@@ -32,6 +32,23 @@ en_dict = (
     (11, "Pisces"),
 )
 
+# Spanish
+es_dict = (
+    (0, "Aries"),
+    (1, "Tauro"),
+    (2, "Géminis"),
+    (3, "Cáncer"),
+    (4, "Leo"),
+    (5, "Virgo"),
+    (6, "Libra"),
+    (7, "Escorpio"),
+    (8, "Sagitario"),
+    (9, "Capricornio"),
+    (10, "Acuario"),
+    (11, "Piscis"),
+)
+
+
 # Russian
 ru_dict = (
     (0, "Овен"),
@@ -88,6 +105,7 @@ language_dict = {
     'el': el_dict,
     'el_CY': el_dict,
     'el_GR': el_dict,
+    'es_ES': es_dict,
     None: en_dict
 }
 
