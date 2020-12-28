@@ -32,6 +32,23 @@ en_dict = (
     (11, "Pisces"),
 )
 
+# German
+de_dict = (
+    (0, "Widder"),
+    (1, "Stier"),
+    (2, "Zwillinge"),
+    (3, "Krebs"),
+    (4, "Löwe"),
+    (5, "Jungfrau"),
+    (6, "Waage"),
+    (7, "Skorpion"),
+    (8, "Schütze"),
+    (9, "Steinbock"),
+    (10, "Wassermann"),
+    (11, "Fische"),
+)
+
+
 # Spanish
 es_dict = (
     (0, "Aries"),
@@ -47,7 +64,6 @@ es_dict = (
     (10, "Acuario"),
     (11, "Piscis"),
 )
-
 
 # Russian
 ru_dict = (
@@ -99,6 +115,7 @@ el_dict = (
 
 language_dict = {
     'en_US': en_dict,
+    'de_DE': de_dict,
     'ru_RU': ru_dict,
     'pt_BR': pt_dict,
     'pt_PT': pt_dict,
@@ -109,10 +126,12 @@ language_dict = {
     None: en_dict
 }
 
+
 # @todo use gettext and etc
 def _(word_index):
     language = locale.getlocale()
     return language_dict.get(language[0], 'en_US')[word_index][1]
+
 
 def get_zodiac_sign(d, month=None):
     # params
