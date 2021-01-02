@@ -48,7 +48,6 @@ de_dict = (
     (11, "Fische"),
 )
 
-
 # Spanish
 es_dict = (
     (0, "Aries"),
@@ -128,12 +127,14 @@ language_dict = {
 
 
 # @todo use gettext and etc
-def _(word_index):
+def _(word_index, language=None):
+    if language is not None:
+        return language_dict.get(language)[word_index][1]
     language = locale.getlocale()
-    return language_dict.get(language[0], 'en_US')[word_index][1]
+    return language_dict.get(language[0], language_dict.get('en_US'))[word_index][1]
 
 
-def get_zodiac_sign(d, month=None):
+def get_zodiac_sign(d, month=None, language=None):
     # params
     if month is None:
         month = int(d.month)
@@ -144,5 +145,5 @@ def get_zodiac_sign(d, month=None):
     # calculate
     for index, sign in enumerate(sign_dates):
         if (month == sign[0][1] and day >= sign[0][0]) or (month == sign[1][1] and day <= sign[1][0]):
-            return _(index)
+            return _(index, language)
     return ''

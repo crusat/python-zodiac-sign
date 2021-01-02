@@ -7,6 +7,7 @@ Languages:
 - Russian (`ru_RU`)
 - Portuguese (`pt_BR`, `pt_PT`) - Thanks to @guilhermecomum
 - Greek (`el`, `el_CY`, `el_GR`) - Thanks to @hargikas
+- German (`de_DE`) - Thanks to @pixelsoccupied
 
 # Install
 
@@ -37,6 +38,9 @@ Languages:
     locale.setlocale(locale.LC_ALL, 'en_US')
     print(get_zodiac_sign(6, 3))
     # out "Pisces"
+
+    # force language (without auto detect)
+    print(get_zodiac_sign(6, 3, language='ru_RU'))
 
 # Repository
 
